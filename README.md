@@ -2,7 +2,7 @@
 
 This is the repository for the source codes of the paper
 
-> [Numerical Construction of Quasi-Periodic Solutions Beyond Symplectic Integrators](https://https://arxiv.org/abs/2602.16275), Mingwei Fu and Bin Shi.  
+> [Numerical Construction of Quasi-Periodic Solutions Beyond Symplectic Integrators](https://arxiv.org/abs/2602.16275), Mingwei Fu and Bin Shi.  
 
 These codes are implementations of Dimension-enlarged Newton scheme for finding full dimensional quasi-periodic solutions of 1-d undamped Duffing oscillator and 2-d Henon-Heiles system.
 
