@@ -1,0 +1,24 @@
+# --- MATLAB Artifacts ---
+*.asv               # Auto-save files
+*.m~                # Temporary edit files
+.matlab/            # Local MATLAB configuration folder
+bin/                # Binary files
+slprj/              # Simulink simulation cache
+*.log               # Execution logs
+
+# --- Academic/Experiment Results ---
+# Generated figures should be excluded to keep the repository lightweight.
+# Users can regenerate these by running the provided scripts.
+*.fig
+*.png
+*.pdf
+*.eps
+*.jpg
+
+# --- Data & Output ---
+results/            # Folder for convergence history or exported data
+data/output/        # Folder for generated .mat data files
+
+# --- System Files ---
+.DS_Store           # macOS system files
+Thumbs.db           # Windows thumbnail cache
