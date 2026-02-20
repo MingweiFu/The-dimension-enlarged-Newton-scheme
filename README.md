@@ -1,4 +1,4 @@
-# Dimension-enlarged Newton scheme (full dimensional quasi-periodic solutions of finitely dimensional systems)
+# Dimension-enlarged Newton scheme
 
 This is the repository for the source codes of the paper
 
