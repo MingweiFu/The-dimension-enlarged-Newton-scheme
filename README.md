@@ -17,7 +17,7 @@ These codes are implementations of Dimension-enlarged Newton scheme for:
 
 The file structure is as follows.
 
-- Duffing
+- Duffing  
   > main_duffing.m  
   *This is the main program with Dimension-enlarged Newton scheme for 1-d undamped Duffing oscillator.*  
 
@@ -30,7 +30,7 @@ The file structure is as follows.
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for 1-d undamped Duffing oscillator.*  
 
-- Henon-Heiles
+- Henon-Heiles  
   > main_Henon.m  
   *This is the main program with Dimension-enlarged Newton scheme for 2-d Henon-Heiles system.*  
 
@@ -56,7 +56,7 @@ The file structure is as follows.
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of 2-d Henon-Heiles system, with the first torus perscribed.*  
 
-- Lower-Henon-Heiles-2
+- Lower-Henon-Heiles-2  
   > main_Henon_low_dim.m  
   *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 2-d Henon-Heiles system, with the second torus prescribed.*  
 
@@ -69,9 +69,9 @@ The file structure is as follows.
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of 2-d Henon-Heiles system, with the second torus perscribed.*  
 
-- Lower-FPU-periodic-1
-  > main_FPU_3nodes_1torus.m
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first torus prescribed.*
+- Lower-FPU-periodic-1  
+  > main_FPU_3nodes_1torus.m  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first torus prescribed.*  
 
   > Newton_FPU_Solver.m  
   > P_eqn_calcu.m  
@@ -81,6 +81,19 @@ The file structure is as follows.
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the first torus perscribed.*  
+
+- Lower-FPU-periodic-2
+  > main_FPU_3nodes_1torus.m  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the second torus prescribed.*
+
+  > Newton_FPU_Solver.m  
+  > P_eqn_calcu.m  
+  > Q_eqn.m  
+  > T_construct.m  
+  > Vector_Expand_Padding.m  
+  > Vectorization_Process.m  
+  > Vectorization_Process_Inverse.m  
+  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the second torus perscribed.*  
 
 ## Citing
 
