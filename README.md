@@ -47,7 +47,9 @@ This folder contains codes for paper: [Numerical Construction of Quasi-Periodic 
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for 2-d Henon-Heiles system.*
 
-### 2. Lower-Dimensional Quasi-Periodic Solutions in Paper: [Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound](https://arxiv.org/abs/2605.01864)
+### 2. Lower-Dimensional  
+
+This folder contains codes for paper: [Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound](https://arxiv.org/abs/2605.01864), Mingwei Fu and Bin Shi.  
 
 - Lower-Henon-Heiles-1  
   > main_Henon_low_dim.m  
@@ -165,7 +167,7 @@ If you want to use `Dimension-enlarged Newton scheme` for acadamic proposes, ple
   year={2026}
 }
 ```
-  
+
 ```
 @article{Fu2026numerical,
   title={Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound},
