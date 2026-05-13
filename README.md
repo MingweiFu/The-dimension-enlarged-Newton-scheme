@@ -69,6 +69,19 @@ The file structure is as follows.
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of 2-d Henon-Heiles system, with the second torus perscribed.*  
 
+- Lower-FPU-periodic-1
+  > main_FPU_3nodes_1torus.m
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first torus prescribed.*
+
+  > Newton_FPU_Solver.m  
+  > P_eqn_calcu.m  
+  > Q_eqn.m  
+  > T_construct.m  
+  > Vector_Expand_Padding.m  
+  > Vectorization_Process.m  
+  > Vectorization_Process_Inverse.m  
+  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the first torus perscribed.*  
+
 ## Citing
 
 If you want to use `Dimension-enlarged Newton scheme` for acadamic proposes, please cite the main references as follows:
