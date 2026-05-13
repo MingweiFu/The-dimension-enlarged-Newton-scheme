@@ -3,8 +3,11 @@
 This is the repository for the source codes of the paper
 
 > [Numerical Construction of Quasi-Periodic Solutions Beyond Symplectic Integrators](https://arxiv.org/abs/2602.16275), Mingwei Fu and Bin Shi.  
+> [Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound](https://arxiv.org/abs/2605.01864), Mingwei Fu and Bin Shi.  
 
-These codes are implementations of Dimension-enlarged Newton scheme for finding full dimensional quasi-periodic solutions of 1-d undamped Duffing oscillator and 2-d Henon-Heiles system.
+These codes are implementations of Dimension-enlarged Newton scheme for:  
+- Finding full-dimensional quasi-periodic solutions of 1-d undamped Duffing oscillator and 2-d Henon-Heiles system  
+- Finding lower-dimensional quasi-periodic solutions of 2-d Henon-Heiles system and 3-d Fermi-Pasta-Ulam (FPU) model
 
 ## Requirements
 
@@ -38,7 +41,11 @@ The file structure is as follows.
   > Matrix_Expand_padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for 2-d Henon-Heiles system.*  
+  *These are functions used in the main program for 2-d Henon-Heiles system.*
+
+- Lower-Henon-Heiles-1  
+  > main_Henon_low_dim.m  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 2-d Henon-Heiles system, with the first torus prescribed.*
 
 ## Citing
 
