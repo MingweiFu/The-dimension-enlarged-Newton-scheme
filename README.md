@@ -11,13 +11,15 @@ These codes are implementations of Dimension-enlarged Newton scheme for:
 
 ## Requirements
 
-- MATLAB
+- MATLAB  
 
 ## File structure
 
 The file structure is as follows.
 
-### Full-Dimensional Quasi-Periodic Solutions
+### 1. Full-Dimensional 
+
+This folder contains codes for paper: [Numerical Construction of Quasi-Periodic Solutions Beyond Symplectic Integrators](https://arxiv.org/abs/2602.16275), Mingwei Fu and Bin Shi.  
 
 - Duffing  
   > main_duffing.m  
@@ -45,7 +47,7 @@ The file structure is as follows.
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for 2-d Henon-Heiles system.*
 
-### Lower-Dimensional Quasi-Periodic Solutions
+### 2. Lower-Dimensional Quasi-Periodic Solutions in Paper: [Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound](https://arxiv.org/abs/2605.01864)
 
 - Lower-Henon-Heiles-1  
   > main_Henon_low_dim.m  
