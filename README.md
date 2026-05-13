@@ -82,9 +82,9 @@ The file structure is as follows.
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the first torus perscribed.*  
 
-- Lower-FPU-periodic-2
+- Lower-FPU-periodic-2  
   > main_FPU_3nodes_1torus.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the second torus prescribed.*
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the second torus prescribed.*  
 
   > Newton_FPU_Solver.m  
   > P_eqn_calcu.m  
@@ -94,6 +94,22 @@ The file structure is as follows.
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the second torus perscribed.*  
+
+- Lower-FPU-periodic-3
+  > main_FPU_3nodes_1torus.m  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the third torus prescribed.*
+
+  > Newton_FPU_Solver.m  
+  > P_eqn_calcu.m  
+  > Q_eqn.m  
+  > T_construct.m  
+  > Vector_Expand_Padding.m  
+  > Vectorization_Process.m  
+  > Vectorization_Process_Inverse.m  
+  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the third torus perscribed.*
+
+- Lower-FPU-quasiperiodic-1
+  > main
 
 ## Citing
 
