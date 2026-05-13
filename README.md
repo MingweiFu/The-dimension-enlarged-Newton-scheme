@@ -1,6 +1,6 @@
 # Dimension-enlarged Newton scheme
 
-This is the repository for the source codes of the paper
+This is the repository for the source codes of these papers
 
 > [Numerical Construction of Quasi-Periodic Solutions Beyond Symplectic Integrators](https://arxiv.org/abs/2602.16275), Mingwei Fu and Bin Shi.  
 > [Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound](https://arxiv.org/abs/2605.01864), Mingwei Fu and Bin Shi.  
