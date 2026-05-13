@@ -109,7 +109,17 @@ The file structure is as follows.
   *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the third torus perscribed.*
 
 - Lower-FPU-quasiperiodic-1
-  > main
+  > main_FPU_3nodes_2tori.m  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first and second tori prescribed.*
+
+  > Newton_FPU_Solver.m  
+  > P_eqn_calcu.m  
+  > Q_eqn.m  
+  > T_construct.m  
+  > Matrix_Expand_Padding.m  
+  > Vectorization_Process.m  
+  > Vectorization_Process_Inverse.m  
+  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the first and second tori prescribed.*  
 
 ## Citing
 
