@@ -108,9 +108,9 @@ The file structure is as follows.
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the third torus perscribed.*
 
-- Lower-FPU-quasiperiodic-1
+- Lower-FPU-quasiperiodic-1  
   > main_FPU_3nodes_2tori.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first and second tori prescribed.*
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first and second tori prescribed.*  
 
   > Newton_FPU_Solver.m  
   > P_eqn_calcu.m  
@@ -121,6 +121,32 @@ The file structure is as follows.
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the first and second tori prescribed.*  
 
+- Lower-FPU-quasiperiodic-2  
+  > main_FPU_3nodes_2tori.m  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first and third tori prescribed.*  
+
+  > Newton_FPU_Solver.m  
+  > P_eqn_calcu.m  
+  > Q_eqn.m  
+  > T_construct.m  
+  > Matrix_Expand_Padding.m  
+  > Vectorization_Process.m  
+  > Vectorization_Process_Inverse.m  
+  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the first and third tori prescribed.*  
+
+- Lower-FPU-quasiperiodic-3  
+  > main_FPU_3nodes_2tori.m  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the second and third tori prescribed.*  
+
+  > Newton_FPU_Solver.m  
+  > P_eqn_calcu.m  
+  > Q_eqn.m  
+  > T_construct.m  
+  > Matrix_Expand_Padding.m  
+  > Vectorization_Process.m  
+  > Vectorization_Process_Inverse.m  
+  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the second and third tori prescribed.*  
+  
 ## Citing
 
 If you want to use `Dimension-enlarged Newton scheme` for acadamic proposes, please cite the main references as follows:
