@@ -57,7 +57,7 @@ The file structure is as follows.
   *These are functions used in the main program for lower-dimensional solutions of 2-d Henon-Heiles system, with the first torus perscribed.*  
 
 - Lower-Henon-Heiles-2
-  > main_Henon_low_dim.m
+  > main_Henon_low_dim.m  
   *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 2-d Henon-Heiles system, with the second torus prescribed.*  
 
   > Newton_HH_low_Solver.m  
