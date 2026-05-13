@@ -17,6 +17,8 @@ These codes are implementations of Dimension-enlarged Newton scheme for:
 
 The file structure is as follows.
 
+### Full-Dimensional Quasi-Periodic Solutions
+
 - Duffing  
   > main_duffing.m  
   *This is the main program with Dimension-enlarged Newton scheme for 1-d undamped Duffing oscillator.*  
@@ -42,6 +44,8 @@ The file structure is as follows.
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for 2-d Henon-Heiles system.*
+
+### Lower-Dimensional Quasi-Periodic Solutions
 
 - Lower-Henon-Heiles-1  
   > main_Henon_low_dim.m  
