@@ -164,6 +164,13 @@ If you want to use `Dimension-enlarged Newton scheme` for acadamic proposes, ple
 }
 ```
   
-
+```
+@article{Fu2026numerical,
+  title={Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound},
+  author={Fu, Mingwei and Shi, Bin},
+  journal={arXiv preprint arXiv:2605.01864},
+  year={2026}
+}
+```
 
   
