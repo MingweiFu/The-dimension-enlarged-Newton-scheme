@@ -1,0 +1,129 @@
+import numpy as np
+from scipy.signal import convolve
+
+def T_construct_opt(u_appro, mu_appro, mu, eps, a, torus_idx, A):
+    """
+    2026/05/27  Mingwei Fu
+    This function constructs the linearized operator
+    T_{A_0*A^{r}}, which is size ( (2A_0*A^{r}+1)^{1+b} ) - b times
+    ( (2A_0*A^{r}+1)^{1+b} ) - b.
+    MEMORY OPTIMIZED VERSION
+
+    Input:
+    u_appro:   matrix of u(n,k) coefficients
+    mu_appro:  approximate frequencies
+    mu:        initial frequency function @(n) mu(n) = |n|^2 + m
+    eps:       perturbation quantity
+    a:         initial coefficients
+    torus_idx: index of this chosen torus
+    A:         truncation parameter
+
+    Output:
+    T: linearized matrix of size ( (2A_0*A^{r}+1)^{1+b} ) - b times
+       ( (2A_0*A^{r}+1)^{1+b} ) - b, with resonant entries reduced
+    """
+
+    # settings
+    Lr     = u_appro.shape[0]     # Lr = 2 * A_0 * A^{r-1} + 1
+    Ar     = (Lr - 1) / 2         # Ar = A_0 * A^{r-1}
+    A_next = int(Ar * A)          # A_next = A_0 * A^{r}
+    L_next = int(2 * A_next + 1)  # L_next = 2 * A_0 * A^{r} + 1
+
+
+    # calculate the Q-eqns
+    u_appro_bar = np.flip(u_appro.copy())
+
+
+    # Pre-compute Convolutions
+    S1_conv = 2 * convolve(u_appro, u_appro_bar, mode="full")
+    S2_conv = convolve(u_appro, u_appro, mode="full")
+    Ar_expand = int(2 * Ar)
+    Lr_expand = int(2 * Ar_expand + 1)
+
+
+    # Expand each convolution matrix to the interval [-A_0*A^{r}, A_0*A^{r}]^{1+b}
+    offset_2 = int(A_next - Ar_expand)
+    S1_next = np.zeros((L_next, L_next))
+    S2_next = np.zeros((L_next, L_next))
+    S1_next[offset_2 : offset_2 + Lr_expand, offset_2 : offset_2 + Lr_expand] = S1_conv
+    S2_next[offset_2 : offset_2 + Lr_expand, offset_2 : offset_2 + Lr_expand] = S2_conv
+
+
+    # Prepare the 1D vectors for frequency coordinates
+    ks = np.arange(-A_next, A_next + 1)
+    N_grid, K_grid = np.meshgrid(ks, ks, indexing="ij")
+
+    N_v = N_grid.flatten()
+    K_v = K_grid.flatten()
+    center = int(A_next)
+
+
+    # Locate the index of resonance point for single-excision (Strictly Periodic B.C. Core)
+    e_vec = np.array([torus_idx, 1])
+    coords = np.column_stack((N_v, K_v))
+    idx_e1 = np.where((coords == e_vec).all(axis=1))[0][0]
+
+
+    # =========================================================================
+    # In-place assembly (Memory optimization core)
+    # We allocate only one large matrix to act as the final T matrix.
+    # =========================================================================
+    T_full = np.zeros((L_next**2, L_next**2))
+
+
+
+
+    # --- Step 1: Column-by-Column construction of Nonlinear part (eps * S) ---
+    for col in range(L_next**2):
+        nc = N_v[col]
+        kc = K_v[col]
+
+        # S1 part
+        dn = N_v - nc
+        dk = K_v - kc
+        mask_d = (np.abs(dn) <= Ar_expand) & (np.abs(dk) <= Ar_expand)
+        if np.any(mask_d):
+            T_full[mask_d, col] = eps * S1_next[dn[mask_d] + center, dk[mask_d] + center]
+
+        # S2 part
+        sn = N_v + nc
+        sk = K_v + kc
+        mask_s = (np.abs(sn) <= Ar_expand) & (np.abs(sk) <= Ar_expand)
+        if np.any(mask_s):
+            T_full[mask_s, col] += eps * S2_next[sn[mask_s] + center, sk[mask_s] + center]
+
+    # At this point, T_full is exactly the matrix (eps * S)
+
+
+
+
+    # --- Step 2: Add Frequency Derivative part B in-place ---
+    offset_1 = int(A_next - Ar)
+    u_appro_expand = np.zeros((L_next, L_next))
+    u_appro_expand[offset_1 : offset_1 + Lr, offset_1 : offset_1 + Lr] = u_appro
+
+    V_row = -K_v * u_appro_expand.flatten()
+    V_col_eps = T_full[idx_e1, :].copy()
+
+
+    # Add B to T_full column by column
+    for col in range(L_next**2):
+        T_full[:, col] += (1 / a) * V_row * V_col_eps[col]
+
+
+
+
+    # --- Step 3: Add Diagonal part D directly to the diagonal of T_full ---
+    diag_vec = -mu_appro * K_v + mu(N_v)
+    np.fill_diagonal(T_full, T_full.diagonal() + diag_vec)
+
+
+
+
+    # --- Step 4: Perform Single Excision on the finalized matrix ---
+    T_full = np.delete(T_full, idx_e1, axis=0)
+    T_full = np.delete(T_full, idx_e1, axis=1)
+
+    T = T_full
+
+    return T
