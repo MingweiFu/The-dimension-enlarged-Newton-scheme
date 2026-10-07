@@ -41,10 +41,10 @@ The MATLAB and Python codes were executed on different machines.
 
 The finite-dimensional MATLAB codes were executed on a personal computer with the following configuration:  
 
-- Operating system: [your operating system]  
-- CPU: [your CPU model]  
+- CPU: 13th Gen Intel(R) Core(TM) i9-13900HX @ 2.20 GHz  
 - RAM: 16 GB  
-- MATLAB: [your MATLAB version]  
+- GPU: NVIDIA GeForce RTX 4060 Laptop GPU, 8 GB  
+- System type: 64-bit operating system, x64-based processor  
 
 ### Computing server  
 
