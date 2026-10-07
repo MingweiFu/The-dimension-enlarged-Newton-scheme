@@ -41,22 +41,19 @@ The MATLAB and Python codes were executed on different machines.
 
 The finite-dimensional MATLAB codes were executed on a personal computer with the following configuration:  
 
+- Operating system: Windows 11 Home, Version 25H2, 64-bit  
 - CPU: 13th Gen Intel(R) Core(TM) i9-13900HX @ 2.20 GHz  
 - RAM: 16 GB  
 - GPU: NVIDIA GeForce RTX 4060 Laptop GPU, 8 GB  
-- System type: 64-bit operating system, x64-based processor  
 
 ### Computing server  
 
 The nonlinear PDE Python codes were executed on a computing server with the following configuration:  
 
-- Operating system: [server operating system]  
-- CPU: [server CPU model]  
-- Number of CPU cores/threads: [number]  
-- RAM: [server RAM]  
-- Python: 3.10.12  
-
-The Python programs are configured to use up to 20 CPU threads for MKL, NumExpr, and OpenMP computations.  
+- Operating system: Ubuntu 22.04.5 LTS, 64-bit  
+- CPU: Intel(R) Xeon(R) w7-3445, 20 cores and 40 threads  
+- RAM: 512 GB  
+- GPU: NVIDIA GeForce RTX 4090 D, 24 GB  
 
 ---  
 
