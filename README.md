@@ -11,6 +11,8 @@ These codes are implementations of the Dimension-enlarged Newton scheme for:
 - Finding lower-dimensional quasi-periodic solutions of 2D Henon-Heiles system and 3D Fermi-Pasta-Ulam (FPU) model
 - Finding quasi-periodic solutions of 1D Nonlinear Schrödinger (NLS) equation and 1D Nonlinear Wave (NLW) equation  
 
+---  
+
 ## Requirements
 
 ### Finite-dimensional systems  
@@ -27,7 +29,36 @@ The codes for the nonlinear PDEs are implemented in Python.
 - NumPy  
 - SciPy  
 - Matplotlib  
-- Pillow  
+- Pillow
+
+---  
+
+## Computational environment  
+
+The MATLAB and Python codes were executed on different machines.  
+
+### Personal computer  
+
+The finite-dimensional MATLAB codes were executed on a personal computer with the following configuration:  
+
+- Operating system: [your operating system]  
+- CPU: [your CPU model]  
+- RAM: 16 GB  
+- MATLAB: [your MATLAB version]  
+
+### Computing server  
+
+The nonlinear PDE Python codes were executed on a computing server with the following configuration:  
+
+- Operating system: [server operating system]  
+- CPU: [server CPU model]  
+- Number of CPU cores/threads: [number]  
+- RAM: [server RAM]  
+- Python: 3.10.12  
+
+The Python programs are configured to use up to 20 CPU threads for MKL, NumExpr, and OpenMP computations.  
+
+---  
 
 ## File structure
 
@@ -171,6 +202,8 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of 3D FPU model, with the second and third tori prescribed.*  
   
+---  
+
 ## Citing
 
 If you want to use `Dimension-enlarged Newton scheme` for acadamic proposes, please cite the main references as follows:
