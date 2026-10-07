@@ -6,10 +6,10 @@ This is the repository for the source codes accompanying the following papers
 > [Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound](https://arxiv.org/abs/2605.01864), Mingwei Fu and Bin Shi.  
 > [Numerical Construction of Quasi-Periodic Solutions for Nonlinear PDEs: I. Bounded Perturbation](https://arxiv.org/abs/2610.07262), Mingwei Fu and Bin Shi.  
 
-These codes are implementations of Dimension-enlarged Newton scheme for:  
-- Finding full-dimensional quasi-periodic solutions of 1-d undamped Duffing oscillator and 2-d Henon-Heiles system  
-- Finding lower-dimensional quasi-periodic solutions of 2-d Henon-Heiles system and 3-d Fermi-Pasta-Ulam (FPU) model
-- Finding quasi-periodic solutions of 1-d Nonliear Schr\"odinger (NLS) equation and 1-d Nonlinear Wave (NLW) equation  
+These codes are implementations of the Dimension-enlarged Newton scheme for:  
+- Finding full-dimensional quasi-periodic solutions of 1D undamped Duffing oscillator and 2D Henon-Heiles system  
+- Finding lower-dimensional quasi-periodic solutions of 2D Henon-Heiles system and 3D Fermi-Pasta-Ulam (FPU) model
+- Finding quasi-periodic solutions of 1D Nonlinear Schrödinger (NLS) equation and 1D Nonlinear Wave (NLW) equation  
 
 ## Requirements
 
