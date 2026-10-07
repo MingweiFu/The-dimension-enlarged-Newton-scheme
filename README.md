@@ -13,8 +13,21 @@ These codes are implementations of the Dimension-enlarged Newton scheme for:
 
 ## Requirements
 
-- MATLAB  
-- Python  
+### Finite-dimensional systems  
+
+The codes for the finite-dimensional systems are implemented in MATLAB.  
+
+- MATLAB
+
+### Nonlinear PDEs
+
+The codes for the nonlinear PDEs are implemented in Python.  
+
+- Python 3
+- NumPy  
+- SciPy  
+- Matplotlib  
+- Pillow  
 
 ## File structure
 
