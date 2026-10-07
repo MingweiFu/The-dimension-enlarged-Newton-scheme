@@ -13,7 +13,7 @@ These codes are implementations of the Dimension-enlarged Newton scheme for:
 
 ## Requirements
 
-- MATLAB
+- MATLAB  
 - Python  
 
 ## File structure
@@ -26,7 +26,7 @@ This folder contains codes for paper: [Numerical Construction of Quasi-Periodic 
 
 - Duffing  
   > main_duffing.m  
-  *This is the main program with Dimension-enlarged Newton scheme for 1-d undamped Duffing oscillator.*  
+  *This is the main program with Dimension-enlarged Newton scheme for 1D undamped Duffing oscillator.*  
 
   > Newton_duffing_Solver.m    
   > P_eqn_calcu.m  
@@ -35,11 +35,11 @@ This folder contains codes for paper: [Numerical Construction of Quasi-Periodic 
   > Vector_Expand_padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for 1-d undamped Duffing oscillator.*  
+  *These are functions used in the main program for 1D undamped Duffing oscillator.*  
 
 - Henon-Heiles  
   > main_Henon.m  
-  *This is the main program with Dimension-enlarged Newton scheme for 2-d Henon-Heiles system.*  
+  *This is the main program with Dimension-enlarged Newton scheme for 2D Henon-Heiles system.*  
 
   > Newton_HH_Solver.m  
   > P_eqn_calcu.m  
@@ -48,7 +48,7 @@ This folder contains codes for paper: [Numerical Construction of Quasi-Periodic 
   > Matrix_Expand_padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for 2-d Henon-Heiles system.*
+  *These are functions used in the main program for 2D Henon-Heiles system.*
 
 ### 2. Lower-Dimensional  
 
@@ -56,7 +56,7 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
 
 - Lower-Henon-Heiles-1  
   > main_Henon_low_dim.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 2-d Henon-Heiles system, with the first torus prescribed.*  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 2D Henon-Heiles system, with the first torus prescribed.*  
 
   > Newton_HH_low_Solver.m  
   > P_eqn_calcu.m  
@@ -65,11 +65,11 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
   > Vector_Expand_Padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for lower-dimensional solutions of 2-d Henon-Heiles system, with the first torus perscribed.*  
+  *These are functions used in the main program for lower-dimensional solutions of 2D Henon-Heiles system, with the first torus perscribed.*  
 
 - Lower-Henon-Heiles-2  
   > main_Henon_low_dim.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 2-d Henon-Heiles system, with the second torus prescribed.*  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 2D Henon-Heiles system, with the second torus prescribed.*  
 
   > Newton_HH_low_Solver.m  
   > P_eqn_calcu.m  
@@ -78,11 +78,11 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
   > Vector_Expand_Padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for lower-dimensional solutions of 2-d Henon-Heiles system, with the second torus perscribed.*  
+  *These are functions used in the main program for lower-dimensional solutions of 2D Henon-Heiles system, with the second torus perscribed.*  
 
 - Lower-FPU-periodic-1  
   > main_FPU_3nodes_1torus.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first torus prescribed.*  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3D FPU model, with the first torus prescribed.*  
 
   > Newton_FPU_Solver.m  
   > P_eqn_calcu.m  
@@ -91,11 +91,11 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
   > Vector_Expand_Padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the first torus perscribed.*  
+  *These are functions used in the main program for lower-dimensional solutions of 3D FPU model, with the first torus perscribed.*  
 
 - Lower-FPU-periodic-2  
   > main_FPU_3nodes_1torus.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the second torus prescribed.*  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3D FPU model, with the second torus prescribed.*  
 
   > Newton_FPU_Solver.m  
   > P_eqn_calcu.m  
@@ -104,11 +104,11 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
   > Vector_Expand_Padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the second torus perscribed.*  
+  *These are functions used in the main program for lower-dimensional solutions of 3D FPU model, with the second torus perscribed.*  
 
 - Lower-FPU-periodic-3
   > main_FPU_3nodes_1torus.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the third torus prescribed.*
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3D FPU model, with the third torus prescribed.*
 
   > Newton_FPU_Solver.m  
   > P_eqn_calcu.m  
@@ -117,11 +117,11 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
   > Vector_Expand_Padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the third torus perscribed.*
+  *These are functions used in the main program for lower-dimensional solutions of 3D FPU model, with the third torus perscribed.*
 
 - Lower-FPU-quasiperiodic-1  
   > main_FPU_3nodes_2tori.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first and second tori prescribed.*  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3D FPU model, with the first and second tori prescribed.*  
 
   > Newton_FPU_Solver.m  
   > P_eqn_calcu.m  
@@ -130,11 +130,11 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
   > Matrix_Expand_Padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the first and second tori prescribed.*  
+  *These are functions used in the main program for lower-dimensional solutions of 3D FPU model, with the first and second tori prescribed.*  
 
 - Lower-FPU-quasiperiodic-2  
   > main_FPU_3nodes_2tori.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the first and third tori prescribed.*  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3D FPU model, with the first and third tori prescribed.*  
 
   > Newton_FPU_Solver.m  
   > P_eqn_calcu.m  
@@ -143,11 +143,11 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
   > Matrix_Expand_Padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the first and third tori prescribed.*  
+  *These are functions used in the main program for lower-dimensional solutions of 3D FPU model, with the first and third tori prescribed.*  
 
 - Lower-FPU-quasiperiodic-3  
   > main_FPU_3nodes_2tori.m  
-  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3-d FPU model, with the second and third tori prescribed.*  
+  *This is the main program with Dimension-enlarged Newton scheme for lower-dimensional solutions of 3D FPU model, with the second and third tori prescribed.*  
 
   > Newton_FPU_Solver.m  
   > P_eqn_calcu.m  
@@ -156,7 +156,7 @@ This folder contains codes for paper: [Numerical Construction of Elliptic Lower-
   > Matrix_Expand_Padding.m  
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
-  *These are functions used in the main program for lower-dimensional solutions of 3-d FPU model, with the second and third tori prescribed.*  
+  *These are functions used in the main program for lower-dimensional solutions of 3D FPU model, with the second and third tori prescribed.*  
   
 ## Citing
 
