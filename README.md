@@ -3,7 +3,7 @@
 This is the repository for the source codes accompanying the following papers  
 
 > [Numerical Construction of Quasi-Periodic Solutions Beyond Symplectic Integrators](https://arxiv.org/abs/2602.16275), Mingwei Fu and Bin Shi.  
-> [Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound](https://arxiv.org/abs/2605.01864), Mingwei Fu and Bin Shi.
+> [Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound](https://arxiv.org/abs/2605.01864), Mingwei Fu and Bin Shi.  
 > [Numerical Construction of Quasi-Periodic Solutions for Nonlinear PDEs: I. Bounded Perturbation](https://arxiv.org/abs/2610.07262), Mingwei Fu and Bin Shi.  
 
 These codes are implementations of Dimension-enlarged Newton scheme for:  
