@@ -311,7 +311,7 @@ This folder contains the codes for the paper: [Numerical Construction of Quasi-P
 
 ## Citing
 
-If you want to use `Dimension-enlarged Newton scheme` for acadamic proposes, please cite the main references as follows:
+If you want to use the `Dimension-enlarged Newton scheme` for acadamic proposes, please cite the main references as follows:
 
 ```
 @article{Fu2026numerical,
@@ -327,6 +327,15 @@ If you want to use `Dimension-enlarged Newton scheme` for acadamic proposes, ple
   title={Numerical Construction of Elliptic Lower-Dimensional Quasi-Periodic Solutions with a Priori Bound},
   author={Fu, Mingwei and Shi, Bin},
   journal={arXiv preprint arXiv:2605.01864},
+  year={2026}
+}
+```
+
+```
+@article{Fu2026numerical,
+  title={Numerical Construction of Quasi-Periodic Solutions for Nonlinear PDEs: I. Bounded Perturbation},
+  author={Fu, Mingwei and Shi, Bin},
+  journal={arXiv preprint arXiv:2610.07262},
   year={2026}
 }
 ```
