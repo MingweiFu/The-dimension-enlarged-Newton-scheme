@@ -205,7 +205,7 @@ This folder contains the codes for the paper: [Numerical Construction of Quasi-P
 
 - NLS-Dirichlet-1torus  
   > main_NLS_Dirichlet_torus1.py  
-  *This is the main program with the Dimension-enlarged Newton scheme for quasi-periodic solutions of the 1D NLS with Dirichlet boundary condition, taking n=1 as the tangential mode.*  
+  *This is the main program with the Dimension-enlarged Newton scheme for time periodic solutions of the 1D NLS with Dirichlet boundary conditions, taking n=1 as the tangential mode.*  
 
   > Newton_1d_NLS_Solver.py  
   > P_eqn_calcu.py  
@@ -214,7 +214,98 @@ This folder contains the codes for the paper: [Numerical Construction of Quasi-P
   > Matrix_Expand_Padding.py  
   > Vectorization_Process.py  
   > Vectorization_Process_Inverse.py  
-  *These are functions used in the main program for quasi-periodic solutions of the 1D NLS with Dirichlet boundary condition, taking n=1 as the tangential mode.*  
+  *These are functions used in the main program for time periodic solutions of the 1D NLS with Dirichlet boundary conditions, taking n=1 as the tangential mode.*  
+
+- NLS-Dirichlet-2tori  
+  > main_NLS_Dirichlet_torus2.py  
+  *This is the main program with the Dimension-enlarged Newton scheme for time quasi-periodic solutions of the 1D NLS with Dirichlet boundary conditions, taking n=1 and n=2 as the tangential modes.*  
+
+  > Newton_2d_NLS_Solver.py  
+  > P_eqn_calcu.py  
+  > Q_eqn.py  
+  > T_construct_opt.py  
+  > Tensor_Expand_Padding.py  
+  > Vectorization_Process.py  
+  > Vectorization_Process_Inverse.py  
+  *These are functions used in the main program for time quasi-periodic solutions of the 1D NLS with Dirichlet boundary conditions, taking n=1 and n=2 as the tangential modes.*
+
+- NLS-periodic-1torus  
+  > main_NLS_Periodic_torus1.py  
+  *This is the main program with the Dimension-enlarged Newton scheme for time periodic solutions of the 1D NLS with periodic boundary conditions, taking n=1 as the tangential mode.*  
+
+  > Newton_1d_NLS_Solver.py  
+  > P_eqn_calcu.py  
+  > Q_eqn.py  
+  > T_construct_opt.py  
+  > Matrix_Expand_Padding.py  
+  > Vectorization_Process.py  
+  > Vectorization_Process_Inverse.py  
+  *These are functions used in the main program for time periodic solutions of the 1D NLS with periodic boundary conditions, taking n=1 as the tangential mode.*  
+
+- NLS-periodic-2tori  
+  > main_NLS_Periodic_torus2.py  
+  *This is the main program with the Dimension-enlarged Newton scheme for time quasi-periodic solutions of the 1D NLS with periodic boundary conditions, taking n=1 and n=2 as the tangential modes.*  
+
+  > Newton_2d_NLS_Solver.py  
+  > P_eqn_calcu.py  
+  > Q_eqn.py  
+  > T_construct_opt.py  
+  > Tensor_Expand_Padding.py  
+  > Vectorization_Process.py  
+  > Vectorization_Process_Inverse.py  
+  *These are functions used in the main program for time quasi-periodic solutions of the 1D NLS with periodic boundary conditions, taking n=1 and n=2 as the tangential modes.*
+
+- NLW-Dirichlet-1torus  
+  > main_NLW_Dirichlet_torus1.py  
+  *This is the main program with the Dimension-enlarged Newton scheme for time periodic solutions of the 1D NLW with Dirichlet boundary conditions, taking n=1 as the tangential mode.*  
+
+  > Newton_1d_NLW_Solver.py  
+  > P_eqn_calcu.py  
+  > Q_eqn.py  
+  > T_construct_opt.py  
+  > Matrix_Expand_Padding.py  
+  > Vectorization_Process.py  
+  > Vectorization_Process_Inverse.py  
+  *These are functions used in the main program for time periodic solutions of the 1D NLW with Dirichlet boundary conditions, taking n=1 as the tangential mode.*  
+
+- NLW-Dirichlet-2tori  
+  > main_NLW_Dirichlet_torus2.py  
+  *This is the main program with the Dimension-enlarged Newton scheme for time quasi-periodic solutions of the 1D NLW with Dirichlet boundary conditions, taking n=1 and n=2 as the tangential modes.*  
+
+  > Newton_2d_NLW_Solver.py  
+  > P_eqn_calcu.py  
+  > Q_eqn.py  
+  > T_construct_opt.py  
+  > Tensor_Expand_Padding.py  
+  > Vectorization_Process.py  
+  > Vectorization_Process_Inverse.py  
+  *These are functions used in the main program for time quasi-periodic solutions of the 1D NLW with Dirichlet boundary conditions, taking n=1 and n=2 as the tangential modes.*
+
+- NLW-periodic-1torus  
+  > main_NLW_Periodic_torus1.py  
+  *This is the main program with the Dimension-enlarged Newton scheme for time periodic solutions of the 1D NLW with periodic boundary conditions, taking n=1 as the tangential mode.*  
+
+  > Newton_1d_NLW_Solver.py  
+  > P_eqn_calcu.py  
+  > Q_eqn.py  
+  > T_construct_opt.py  
+  > Matrix_Expand_Padding.py  
+  > Vectorization_Process.py  
+  > Vectorization_Process_Inverse.py  
+  *These are functions used in the main program for time periodic solutions of the 1D NLW with periodic boundary conditions, taking n=1 as the tangential mode.*  
+
+- NLW-periodic-2tori  
+  > main_NLW_Periodic_torus2.py  
+  *This is the main program with the Dimension-enlarged Newton scheme for time quasi-periodic solutions of the 1D NLW with periodic boundary conditions, taking n=1 and n=2 as the tangential modes.*  
+
+  > Newton_2d_NLW_Solver.py  
+  > P_eqn_calcu.py  
+  > Q_eqn.py  
+  > T_construct_opt.py  
+  > Tensor_Expand_Padding.py  
+  > Vectorization_Process.py  
+  > Vectorization_Process_Inverse.py  
+  *These are functions used in the main program for time quasi-periodic solutions of the 1D NLW with periodic boundary conditions, taking n=1 and n=2 as the tangential modes.*  
 
 ---  
 
