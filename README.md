@@ -198,7 +198,24 @@ This folder contains the codes for the paper: [Numerical Construction of Ellipti
   > Vectorization_Process.m  
   > Vectorization_Process_Inverse.m  
   *These are functions used in the main program for lower-dimensional solutions of the 3D FPU model, with the second and third tori prescribed.*  
-  
+
+### 3. Nonlinear-PDEs-bounded  
+
+This folder contains the codes for the paper: [Numerical Construction of Quasi-Periodic Solutions for Nonlinear PDEs: I. Bounded Perturbation](https://arxiv.org/abs/2610.07262), Mingwei Fu and Bin Shi.  
+
+- NLS-Dirichlet-1torus  
+  > main_NLS_Dirichlet_torus1.py  
+  *This is the main program with the Dimension-enlarged Newton scheme for quasi-periodic solutions of the 1D NLS with Dirichlet boundary condition, taking n=1 as the tangential mode.*  
+
+  > Newton_1d_NLS_Solver.py  
+  > P_eqn_calcu.py  
+  > Q_eqn.py  
+  > T_construct_opt.py  
+  > Matrix_Expand_Padding.py  
+  > Vectorization_Process.py  
+  > Vectorization_Process_Inverse.py  
+  *These are functions used in the main program for quasi-periodic solutions of the 1D NLS with Dirichlet boundary condition, taking n=1 as the tangential mode.*  
+
 ---  
 
 ## Citing
